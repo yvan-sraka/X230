@@ -40,7 +40,7 @@
   # n.b. Most of my tooling is project-specific, which mean I rather define my
   # developer environment dependencies in a shell.nix than here, what's left is
   # daily routine utilities and GUI software.
-  home.packages = with pkgs; [ aerc asciinema pandoc mosh pass gnupg(
+  home.packages = with pkgs; [ aerc asciinema pandoc mosh pass gnupg (
     let root = "/Users/yvan/.nixpkgs";
         flake = "${root}\#darwinConfigurations.Butternut.system"; in (
       writeShellScriptBin "upgrade-system" ''

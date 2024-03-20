@@ -74,7 +74,7 @@
   home-manager = {
     # You could find mine here: https://github.com/yvan-sraka/.config
     # n.b. I define in home-manager numerous stuffs (like my graphical session)
-    users.yvan = import ./home.nix;
+    users.yvan = import ../common/home.nix;
     # https://nix-community.github.io/home-manager/#sec-install-nixos-module
     useUserPackages = true;
     useGlobalPkgs = true;

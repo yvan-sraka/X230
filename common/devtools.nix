@@ -50,10 +50,12 @@
   programs.tmux = {
     enable = true;
     extraConfig = builtins.readFile (
-      builtins.fetchurl {
-      url = "https://git.grml.org/f/grml-etc-core/etc/tmux.conf";
-      sha256 = "1ysb9jzhhpz160kwcf4iafw7qngs90k3rgblp04qhz5f8gjy6z03";
-    });
+      ./tumx.conf
+    #   builtins.fetchurl {
+    #     url = "https://git.grml.org/f/grml-etc-core/etc/tmux.conf";
+    #     sha256 = "1ysb9jzhhpz160kwcf4iafw7qngs90k3rgblp04qhz5f8gjy6z03";
+    #   }
+    );
   };
 
   # Q: How to set up your preferred EDITOR and PAGER through ENV variables?

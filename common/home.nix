@@ -48,7 +48,7 @@ rec {
   programs.fzf.enable = true;
   programs.gh = { enable = true; settings.git_protocol = "ssh"; };
   programs.keychain.enable = true;
-  programs.lesspipe.enable = true;
+  #programs.lesspipe.enable = true;
 
   # Q: How to set my ENV session variables in home-manager?
   home.sessionVariables = {
